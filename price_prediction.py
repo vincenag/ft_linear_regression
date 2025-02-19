@@ -39,7 +39,7 @@ class CarPricePredictor:
 if __name__ == "__main__":
 
     predict = CarPricePredictor()
-    mileage = float(input("Enter a car mileage: "))
+    mileage = float(input("Enter a car mileage [km]: "))
     predictedPrice = predict.predictPrice(mileage)
-    print (f"Estimated price: {predictedPrice:.2f}")
+    print (f"Estimated price: {predictedPrice:.2f} €")
     predict.dataPlot("data.csv")
